@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Real-Time WASM Raytracer</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <canvas id="view" width="400" height="300" aria-label="Raytraced scene"></canvas>
+      <section class="panel" aria-label="Renderer controls">
+        <div class="fps"><span id="fps">0</span> FPS</div>
+        <label>
+          <span>Resolution</span>
+          <select id="resolution">
+            <option value="320x240">320 x 240</option>
+            <option value="400x300" selected>400 x 300</option>
+            <option value="640x360">640 x 360</option>
+            <option value="800x450">800 x 450</option>
+          </select>
+        </label>
+        <label>
+          <span>Samples <b id="samplesValue">1</b></span>
+          <input id="samples" type="range" min="1" max="8" value="1" step="1" />
+        </label>
+        <label>
+          <span>Bounces <b id="depthValue">4</b></span>
+          <input id="depth" type="range" min="1" max="8" value="4" step="1" />
+        </label>
+        <label class="check">
+          <input id="extraSpheres" type="checkbox" checked />
+          <span>Extra spheres</span>
+        </label>
+      </section>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

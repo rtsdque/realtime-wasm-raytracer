@@ -1,0 +1,10 @@
+{
+  "name": "realtime-wasm-raytracer",
+  "version": "0.1.0",
+  "type": "module",
+  "files": [
+    "realtime_wasm_raytracer_bg.wasm",
+    "realtime_wasm_raytracer.js",
+    "realtime_wasm_raytracer.d.ts"
+  ]
+}
