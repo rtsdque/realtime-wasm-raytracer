@@ -1,0 +1,9 @@
+/target/
+/work/
+/outputs/
+/.agents/
+/.codex/
+
+.DS_Store
+Thumbs.db
+*.log
